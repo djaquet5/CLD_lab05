@@ -35,3 +35,34 @@ The highest monthly price is **Microsoft** with a cost of **$163.94** and the lo
 
 ## Task 2: Data pricing
 
+For this task, we compared only two cloud provider ; Amazon Web Services and Google Cloud Platform. We use the same calculator than the one for previous task.
+
+### Data storage
+
+This part is a comparison of the cost of storing 1 TB of data for a month.
+
+| Storage method                         | Price per month | Remarks                                                      |
+| -------------------------------------- | --------------- | ------------------------------------------------------------ |
+| Amazon Elastic Block Store             | $102.40         |                                                              |
+| Google Compute Engine Persistent Disks | $174.08         |                                                              |
+| Amazon S3                              | $23.56          |                                                              |
+| Google Cloud Storage                   | $20.48          |                                                              |
+| SSD Disk bought at Digitec             | $3.25           | We choose [this disk](https://www.digitec.ch/fr/s1/product/samsung-860-qvo-1000go-25-ssd-10212273). The price has been convert in dollar ($117.11) and amortize on 3 years. |
+
+Amazon S3 stores datas and objects, but Amazon Elastic Block Store (EBS) is a block storage system and can deal with different tasks (like databases, containerized applications, big data analysis engines, ...). The EBS service of Amazon is more expensive than the S3 service for this reason.
+
+Google has the same difference. Instead of the S3 service from Amazon, we have the Google Cloud Storage and instead of the EBS, we have the Google Compute Engine Persistent Disks. This is why we cannot compare the four services together. However, we can compare Amazon Elastic Block Search with Google Compute Engine Persistent Disks (and we can see that Amazon is cheaper than Google) and we can make a second comparison between Amazon S3 and Google Cloud Storage (and we can see, this time, that Google is cheaper than Amazon).
+
+Furthermore, the comparison of the services mentioned above and the SSD disk bought is not relevant either. It is obviously cheaper to have a disk, but we do not have all other services and benefits offered by a cloud provider.
+
+### Data transfer
+
+This  part is a comparison of the cost of transferring 1 TB of data from the Internet to the cloud object store service ("transfer in") and from the cloud store service to the Internet ("transfer out"). As asked, we assume that we transfer not more than 1 TB per month, so we ignore the decrease of the prices.
+
+| Cloud Provider           | Price per month | Remarks |
+| ------------------------ | --------------- | ------- |
+| Amazon 1 TB transfer in  | Free            |         |
+| Google 1 TB transfer in  | Free            |         |
+| Amazon 1 TB transfer out | $92.07          |         |
+| Google 1 TB transfer out | $122.76         |         |
+

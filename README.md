@@ -22,16 +22,18 @@ Furthermore, as asked in the laboratory, we make the following assumptions :
 - If several regions are available and prices differ, we took the region that is shown by default.
 - We do not take into account special introductory offers (such as the AWS Free Tier or similar).
 
-We have not find a Virtual Machine with the characteristics identical as the one asked for every provider. So in the table below, the choice made for each provider is in the **Remarks** column.
+We have not find a Virtual Machine with the characteristics identical as the one asked for every provider. So in the table below, the choice made for each provider is in the **Remarks** column. When we had choice between two similar options from the same cloud provider, we choose the cheapest one.
 
 | Cloud provider        | Price per month   | Remarks                                                      |
 | --------------------- | ----------------- | ------------------------------------------------------------ |
-| Amazon Web Services   | $150.80           | Instance type: Linux on `m5ad.xlarge`                        |
-| Google Cloud Platform | $127.09           | R                                                            |
-| Microsoft Azure       | $163.94           | The instance is the `B4MS` with 32 GB of Temporary storage and we add a 256 GiB SSD |
+| Amazon Web Services   | $150.80           | The instance is the Linux on `m5ad.xlarge` with a 150 GB of SSD |
+| Google Cloud Platform | $127.09           | 15 GB of memory and 375 GB of SSD disk                       |
+| Microsoft Azure       | $163.94           | The instance is the `B4MS` with 32 GB of Temporary storage and we add a 256 GiB of SSD |
 | Exoscale              | €145.70 = $159.34 |                                                              |
 
-The highest monthly price is **Microsoft** with a cost of **$163.94** and the lowest is **Google Cloud Platform** with a cost of **$127.09**. So the monthly price of Google Cloud Platform is **~77.5%** cheaper than Microsoft Azure.
+For the Amazon Web Services, we choose the version with 150 GB of SSD disk. We make this decision because our other option was a 1250 SSD disk (and this disk is obviously more expensive).
+
+The highest monthly price is **Microsoft** with a cost of **$163.94** and the lowest is **Google Cloud Platform** with a cost of **$127.09**. So the monthly price of Google Cloud Platform is **~77.5%** cheaper than Microsoft Azure. It is interesting to notice that the solution with the 375 GB of SSD disk from Google is cheaper than an instance with 320 GB from an another cloud provider.
 
 ## Task 2: Data pricing
 
